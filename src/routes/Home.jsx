@@ -1,3 +1,4 @@
+import { BsChevronDoubleDown } from "react-icons/bs";
 import intro from "/pexels-mikhail-nilov-7677910.mp4";
 import introSM from "/pexels-pixabay-461337.jpg";
 

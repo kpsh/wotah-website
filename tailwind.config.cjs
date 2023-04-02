@@ -3,7 +3,12 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      productsbg: "url('/pexels-pixabay-355518.jpg')",
+      backgroundImage: {
+        cartbg: "url('/pexels-maria-orlova-4946707.jpg')",
+        contactbg: "url('/pexels-maksim-romashkin-7108217.jpg')",
+        faqbg: "url('/pexels-yudy-pirmansah-1053924.jpg')",
+        productsbg: "url('/pexels-tomáš-ondrejka-3307526.jpg')"
+      },
       animation: {
         "color-change-2x": "color-change-2x 4s linear  infinite alternate both",
         "color-change-4x": "color-change-4x 6s linear  infinite alternate both",

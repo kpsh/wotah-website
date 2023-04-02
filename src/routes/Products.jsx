@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaArrowLeft, FaArrowRight, FaDollarSign } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaDollarSign } from "react-icons/fa";
 
 export const Products = () => {
   const products = [
@@ -75,7 +75,7 @@ export const Products = () => {
   const visibleProducts = products.slice(activeIndex, activeIndex + numOfItems);
 
   return (
-    <section className="bg-[url('/pexels-pixabay-355518.jpg')] bg-cover bg-no-repeat bg-center h-screen flex items-center">
+    <section className="bg-productsbg bg-cover bg-no-repeat bg-center h-screen flex items-center">
       <div className="container mx-auto text-white">
         <h2 className="text-5xl font-semibold text-center pt-12 pb-8 drop-shadow-lg">
           Products
@@ -86,13 +86,13 @@ export const Products = () => {
             className="p-2 mr-1 rounded-l-full bg-gray-100/50 backdrop-blur hover:bg-gray-100/70 focus:outline-none"
             onClick={handlePrevClick}
           >
-            <FaArrowLeft className="h-6 w-6 text-white" />
+            <FaChevronLeft className="h-6 w-6 text-white" />
           </button>
           <button
             className="p-2 rounded-r-full bg-gray-100/50 backdrop-blur hover:bg-gray-100/70 focus:outline-none"
             onClick={handleNextClick}
           >
-            <FaArrowRight className="h-6 w-6 text-white" />
+            <FaChevronRight className="h-6 w-6 text-white" />
           </button>
         </div>
 
